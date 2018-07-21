@@ -1,0 +1,22 @@
+<page>
+	<text>سوره‌ی توحید</text>
+	<text>آیه:</text>
+	<choices field="verse" placeholder="آیه">
+		<option value="science">علمی</option>
+		<option value="art" selected="true">هنری</option>
+		<option value="culture">فرهنگی</option>
+		<option value="socialone">اجتماعی یک</option>
+	</choices>
+	<text>قاری:</text>
+	<choices field="reader" placeholder="آیه">
+		<option value="science">علمی</option>
+		<option value="art" selected="true">هنری</option>
+		<option value="culture">فرهنگی</option>
+		<option value="socialone">اجتماعی یک</option>
+	</choices>
+	<text>مترجم:</text>
+	<choices field="translator" placeholder="مترجم">
+		<option value="science">علمی</option>
+	</choices>
+	<button action="verse/">نمایش آیه</button>
+</page>

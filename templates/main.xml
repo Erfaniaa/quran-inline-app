@@ -1,0 +1,10 @@
+<page>
+    <text>سوره:</text>
+	<choices field="surah" placeholder="دسته‌بندی">
+		<option value="science">علمی</option>
+		<option value="art" selected="true">هنری</option>
+		<option value="culture">فرهنگی</option>
+		<option value="socialone">اجتماعی یک</option>
+	</choices>
+	<button action="surah/">نمایش سوره</button>
+</page>
