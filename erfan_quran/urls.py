@@ -1,23 +1,18 @@
-"""erfan_quran URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.0/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
 from django.urls import path
-from quran.views import main_view
+from quran.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('surah/<int:surah_number>/<int:verse_number>/<str:translator_id>/<str:reader_id>/<str:purchased>/<int:usage_count>/', verse_view),
+    path('surah/<int:surah_number>/<int:verse_number>/<str:translator_id>/<str:reader_id>/<int:usage_count>/', verse_view),
+    path('surah/<int:surah_number>/<str:purchased>/<int:usage_count>/', verse_view),
+    path('surah/<int:surah_number>/<int:usage_count>/', verse_view),
+    path('surah/<str:purchased>/<int:usage_count>/', surah_view),
+    path('surah/<int:usage_count>/', surah_view),
+    path('buy/<int:usage_count>/', buy_view),
+    path('<str:purchased>/<int:usage_count>/', main_view),
+    path('<int:usage_count>/', main_view),
     path('', main_view),
 ]
+

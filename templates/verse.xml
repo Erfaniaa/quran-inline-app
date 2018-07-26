@@ -1,7 +1,38 @@
-<page>
-	<text>سوره: </text>
-	<text>آیه: </text>
-	<audio src="folan.mp3"/>
-	<image src="folan.jpg"/>
-	<text>ترجمه‌ی آیه</text>
+<page path="{{ usage_count }}/">
+    <theme background="#fffff0" text="#000d55" primary="#00550d"/>
+    <text style="centeredTitle">سوره‌ی {{ surah_name }}</text>
+	<text style="centered">آیه‌ی {{ verse_number }}</text>
+    <divider style="empty"/>
+    <divider style="empty"/>
+	<image src="{{ verse_image_url }}" width="100%"/>
+    {% if purchased != "" or usage_count <= 10 %}
+        <text>{{ verse_translation_text }}</text>
+        <divider style="empty"/>
+        <audio src="{{ verse_audio_url }}"/>
+    {% endif %}
+    <divider style="empty"/>
+    {% if purchased == "" %}
+        <divider style="empty"/>
+        <dualbuttons>
+            <button style="primary" action="{{ prev_verse_button_url }}{{ usage_count }}/">آیه‌ی قبلی</button>
+            <button style="primary" action="{{ next_verse_button_url }}{{ usage_count }}/">آیه‌ی بعدی</button>
+        </dualbuttons>
+    {% endif %}
+    {% if purchased != "" %}
+        <divider style="empty"/>
+        <dualbuttons>
+            <button style="primary" action="{{ prev_verse_button_url }}purchased/{{ usage_count }}/">آیه‌ی قبلی</button>
+            <button style="primary" action="{{ next_verse_button_url }}purchased/{{ usage_count }}/">آیه‌ی بعدی</button>
+        </dualbuttons>
+    {% endif %}
+    <divider style="empty"/>
+    <divider style="empty"/>
+    {% if purchased == "" and usage_count > 10 %}
+        <text style="centered">
+        <font color="red">
+            مهلت استفاده‌ی شما تمام شد.
+        </font>
+        </text>
+        <button style="secondary" action="pay:buy/{{ usage_count }}/">خرید تمام ترجمه‌ها و قرائت‌ها، بدون دانلود</button>
+    {% endif %}
 </page>

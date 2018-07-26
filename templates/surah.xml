@@ -1,22 +1,32 @@
-<page>
-	<text>سوره‌ی توحید</text>
-	<text>آیه:</text>
-	<choices field="verse" placeholder="آیه">
-		<option value="science">علمی</option>
-		<option value="art" selected="true">هنری</option>
-		<option value="culture">فرهنگی</option>
-		<option value="socialone">اجتماعی یک</option>
+<page path="{{ usage_count }}/">
+    <iab key="MIHNMA0GCSqGSIb3DQEBAQUAA4G7ADCBtwKBrwDcXpXlaHKqAMtZB8yQibX7r+ZwpuQ/Uaw3eHyCcx4ainEcpWRbdKWlDMPF92wlV2WJ56B6XX4p5nPAPGTjpWswAK9yzT2UEpYnpv9gjOgN2TqhINVgX7rFS69xGv63N5441nmuu/UWrSmUdYeR/9zOyHwZikRmqxs06ckUuWjpKH1c416lwUWHKHLXyJTIY1/TpwYl7KzxX4bKQY54+67KEs81OQJQOODu0xiS82ECAwEAAQ==" packagename="erfan.inline.quran" />
+    <theme background="#fffff0" text="#000d55" primary="#00550d"/>
+	<text style="centeredTitle">سوره‌ی {{ surah_name }}</text>
+	<divider style="empty"/>
+	<text>انتخاب آیه:</text>
+	<choices field="verse_number" placeholder="شماره‌ی آیه">
+		{% for i in surah_verses_count_list %}
+            <option value="{{ i.0 }}">{{ i.1 }}</option>
+		{% endfor %}
 	</choices>
-	<text>قاری:</text>
-	<choices field="reader" placeholder="آیه">
-		<option value="science">علمی</option>
-		<option value="art" selected="true">هنری</option>
-		<option value="culture">فرهنگی</option>
-		<option value="socialone">اجتماعی یک</option>
-	</choices>
-	<text>مترجم:</text>
-	<choices field="translator" placeholder="مترجم">
-		<option value="science">علمی</option>
-	</choices>
-	<button action="verse/">نمایش آیه</button>
+    <text>انتخاب مترجم:</text>
+    <choices field="translator_id" placeholder="نام مترجم">
+        {% for translator in translators %}
+            <option value="{{ translator.0 }}">{{ translator.1 }}</option>
+        {% endfor %}
+    </choices>
+    <text>انتخاب قاری:</text>
+    <choices field="reader_id" placeholder="نام قاری">
+        {% for reader in readers %}
+            <option value="{{ reader.0 }}">{{ reader.1 }}</option>
+        {% endfor %}
+    </choices>
+	<divider style="empty"/>
+	<divider style="empty"/>
+    {% if purchased == "" %}
+        <button style="primary" action="surah/{{ surah_number }}/{{ usage_count }}/">نمایش آیه</button>
+    {%  endif %}
+    {% if purchased != "" %}
+        <button style="primary" action="surah/{{ surah_number }}/purchased/{{ usage_count }}/">نمایش آیه</button>
+    {%  endif %}
 </page>

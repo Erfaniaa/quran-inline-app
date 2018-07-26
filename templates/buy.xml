@@ -1,0 +1,5 @@
+<iabBuy>
+ <meta name="sku" value="ErfanInlineQuran" />
+ <meta name="payload" value="PAYLOAD" />
+ <meta name="callback" value="{{ usage_count }}/" />
+</iabBuy>

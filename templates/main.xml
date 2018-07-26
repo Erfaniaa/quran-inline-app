@@ -1,10 +1,18 @@
-<page>
-    <text>سوره:</text>
-	<choices field="surah" placeholder="دسته‌بندی">
-		<option value="science">علمی</option>
-		<option value="art" selected="true">هنری</option>
-		<option value="culture">فرهنگی</option>
-		<option value="socialone">اجتماعی یک</option>
+<page path="{{ usage_count }}/">
+    <theme background="#fffff0" text="#000d55" primary="#00550d"/>
+    <text>انتخاب سوره:</text>
+	<choices field="surah_number" placeholder="نام سوره">
+		{% for i in surahs %}
+            <option value="{{ i.0 }}">{{ i.1 }}</option>
+		{% endfor %}
 	</choices>
-	<button action="surah/">نمایش سوره</button>
+    <divider style="empty"/>
+	<divider style="empty"/>
+    {% if purchased == "" %}
+        <button style="primary" action="surah/{{ usage_count }}/">نمایش سوره</button>
+    {% endif %}
+    {% if purchased != "" %}
+        <button style="primary" action="surah/purchased/{{ usage_count }}/">نمایش سوره</button>
+    {% endif %}
+    <button style="secondary" action="@exit">خروج</button>
 </page>
