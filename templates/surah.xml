@@ -1,4 +1,9 @@
+{% if purchased == "" %}
 <page path="{{ usage_count }}/">
+{% endif %}
+{% if purchased != "" %}
+<page path="purchased/{{ usage_count }}/">
+{% endif %}
     <theme background="#fffff0" text="#000d55" primary="#00550d"/>
 	<text style="centeredTitle">سوره‌ی {{ surah_name }}</text>
 	<divider style="empty"/>
