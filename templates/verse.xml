@@ -30,7 +30,7 @@
     {% if purchased == "" and usage_count > 12 %}
         <text style="centered">
         <font color="red">
-            مهلت استفاده‌ی شما تمام شد.
+            مهلت استفاده‌ی شما تمام شده‌است.
         </font>
         </text>
         <button style="secondary" action="pay:buy/{{ usage_count }}/">خرید تمام ترجمه‌ها و قرائت‌ها، بدون دانلود</button>
