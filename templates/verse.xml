@@ -5,7 +5,7 @@
     <divider style="empty"/>
     <divider style="empty"/>
 	<image src="{{ verse_image_url }}" width="100%"/>
-    {% if purchased != "" or usage_count <= 11 %}
+    {% if purchased != "" or usage_count <= 12 %}
         <text>{{ verse_translation_text }}</text>
         <divider style="empty"/>
         <audio src="{{ verse_audio_url }}"/>
@@ -27,7 +27,7 @@
     {% endif %}
     <divider style="empty"/>
     <divider style="empty"/>
-    {% if purchased == "" and usage_count > 11 %}
+    {% if purchased == "" and usage_count > 12 %}
         <text style="centered">
         <font color="red">
             مهلت استفاده‌ی شما تمام شد.
