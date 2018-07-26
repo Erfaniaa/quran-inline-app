@@ -1,7 +1,7 @@
 <page path="{{ usage_count }}/">
     <theme background="#fffff0" text="#000d55" primary="#00550d"/>
     <text>انتخاب سوره:</text>
-	<choices field="surah_number" placeholder="نام سوره" prefill="page">
+	<choices field="surah_number" placeholder="نام سوره" prefill="application">
 		{% for i in surahs %}
             <option value="{{ i.0 }}">{{ i.1 }}</option>
 		{% endfor %}
