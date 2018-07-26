@@ -14,5 +14,8 @@
     {% if purchased != "" %}
         <button style="primary" action="surah/purchased/{{ usage_count }}/">نمایش سوره</button>
     {% endif %}
-    <button style="secondary" action="@exit">خروج</button>
+    <dualbuttons>
+        <button style="secondary" action="@exit">خروج</button>
+        <button style="secondary" action="share:قرآن آنی عرفان http://kamane.cafebazaar.ir/?pn=erfan.inline.quran">به اشتراک گذاری</button>
+    </dualbuttons>
 </page>

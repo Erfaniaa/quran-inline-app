@@ -17,13 +17,23 @@
     <text>انتخاب مترجم:</text>
     <choices field="translator_id" placeholder="نام مترجم">
         {% for translator in translators %}
-            <option value="{{ translator.0 }}">{{ translator.1 }}</option>
+            {% if translator.0 == "ar.abdulbasitmurattal" %}
+                <option value="{{ translator.0 }}" selected="true">{{ translator.1 }}</option>
+            {% endif %}
+            {% if translator.0 != "ar.abdulbasitmurattal" %}
+                <option value="{{ translator.0 }}" selected="true">{{ translator.1 }}</option>
+            {% endif %}
         {% endfor %}
     </choices>
     <text>انتخاب قاری:</text>
     <choices field="reader_id" placeholder="نام قاری">
         {% for reader in readers %}
-            <option value="{{ reader.0 }}">{{ reader.1 }}</option>
+            {% if reader.0 == "fa.ayati" %}
+                <option value="{{ reader.0 }}" selected="true">{{ reader.1 }}</option>
+            {% endif %}
+            {% if reader.0 != "fa.ayati" %}
+                <option value="{{ reader.0 }}">{{ reader.1 }}</option>
+            {% endif %}
         {% endfor %}
     </choices>
 	<divider style="empty"/>

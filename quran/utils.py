@@ -11,7 +11,7 @@ READERS = [("ar.abdulbasitmurattal", "عبدالباسط"), ("ar.abdullahbasfar"
            ("ar.minshawi", "منشاوی"), ("ar.minshawimujawwad", "منشاوی تحقیق"), ("ar.muhammadayyoub", "محمد ایوب"),
            ("ar.muhammadjibreel", "محمد جبریل"), ("ar.saoodshuraym", "سعود بن ابراهیم الشریم"),
            ("en.walk", "ابراهیم واک"), ("fa.hedayatfarfooladvand", "فولادوند - هدایت‌فر"), ("ar.parhizgar", "پرهیزگار"),
-           ("ur.khan", "شمشاد علی خان"), ("zh.chinese", "قاری چینی"), ("fr.leclerc", "یوسف لکرلک")]
+           ("ur.khan", "شمشاد علی خان"), ("zh.chinese", "(چینی)"), ("fr.leclerc", "یوسف لکرلک (فرانسوی)")]
 
 TRANSLATORS = [("fa.ayati", "آیتی"), ("fa.fooladvand", "فولادوند"), ("fa.ghomshei", "الهی قمشه‌ای"),
                ("fa.makarem", "مکارم شیرازی"), ("fa.ansarian", "انصاریان"), ("fa.bahrampour", "بهرام‌پور"),
