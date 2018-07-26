@@ -1,4 +1,5 @@
 <page path="{{ usage_count }}/">
+    <iab key="MIHNMA0GCSqGSIb3DQEBAQUAA4G7ADCBtwKBrwDcXpXlaHKqAMtZB8yQibX7r+ZwpuQ/Uaw3eHyCcx4ainEcpWRbdKWlDMPF92wlV2WJ56B6XX4p5nPAPGTjpWswAK9yzT2UEpYnpv9gjOgN2TqhINVgX7rFS69xGv63N5441nmuu/UWrSmUdYeR/9zOyHwZikRmqxs06ckUuWjpKH1c416lwUWHKHLXyJTIY1/TpwYl7KzxX4bKQY54+67KEs81OQJQOODu0xiS82ECAwEAAQ==" packagename="app.inline.quran" />
     <theme background="#fffff0" text="#000d55" primary="#00550d"/>
     <text>انتخاب سوره:</text>
 	<choices field="surah_number" placeholder="نام سوره" prefill="application">
