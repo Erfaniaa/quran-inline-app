@@ -15,7 +15,7 @@
 		{% endfor %}
 	</choices>
     <text>انتخاب مترجم:</text>
-    <choices field="translator_id" placeholder="نام مترجم">
+    <choices field="translator_id" placeholder="نام مترجم" prefill="application">
         {% for translator in translators %}
             {% if translator.0 == "fa.ayati" %}
                 <option value="{{ translator.0 }}" selected="true">{{ translator.1 }}</option>
@@ -26,7 +26,7 @@
         {% endfor %}
     </choices>
     <text>انتخاب قاری:</text>
-    <choices field="reader_id" placeholder="نام قاری">
+    <choices field="reader_id" placeholder="نام قاری" prefill="application">
         {% for reader in readers %}
             {% if reader.0 == "ar.abdulbasitmurattal" %}
                 <option value="{{ reader.0 }}" selected="true">{{ reader.1 }}</option>
