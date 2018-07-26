@@ -10,19 +10,18 @@ def splash_view(request):
 
 
 @csrf_exempt
-def main_view(request, purchased="", usage_count=1):
+def main_view(request, usage_count, purchased=""):
     payload = json.loads(request.POST['payload'])
     if payload.get('state'):
         if payload['state'] != 'FAILED':
             purchased = 'purchased'
-    print(purchased)
     surahs = get_surahs_list_with_index()
     return render(request, "main.xml", context={'surahs': surahs, 'purchased': purchased,
                                                 'usage_count': usage_count})
 
 
 @csrf_exempt
-def surah_view(request, purchased="", usage_count=1):
+def surah_view(request, usage_count, purchased=""):
     payload = json.loads(request.POST['payload'])
     if payload.get('purchases'):
         if len(payload['purchases']) > 0:
@@ -36,11 +35,11 @@ def surah_view(request, purchased="", usage_count=1):
                                                  'translators': translators_list, 'surah_number': surah_number,
                                                  'surah_verses_count_list': surah_verses_count_list,
                                                  'purchased': purchased,
-                                                 'usage_count': usage_count})
+                                                 'usage_count': usage_count + 1})
 
 
 @csrf_exempt
-def verse_view(request, surah_number, verse_number=-1, translator_id="", reader_id="", purchased="", usage_count=1):
+def verse_view(request, usage_count, surah_number, verse_number=-1, translator_id="", reader_id="", purchased=""):
     payload = json.loads(request.POST['payload'])
     if verse_number == -1:
         verse_number = payload.get('verse_number')
