@@ -10,7 +10,7 @@
                 <option value="{{ i.0 }}" selected="true">{{ i.1 }}</option>
             {% endif %}
             {% if i.0 != 1 and i.0 != "1" %}
-                <option value="{{ i.0 }}">{{ i.1 }}</option>
+                <option value="{{ i.0   }}">{{ i.1 }}</option>
             {% endif %}
 		{% endfor %}
 	</choices>

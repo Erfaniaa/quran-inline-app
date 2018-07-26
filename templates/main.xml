@@ -1,7 +1,7 @@
 <page path="{{ usage_count }}/">
     <theme background="#fffff0" text="#000d55" primary="#00550d"/>
     <text>انتخاب سوره:</text>
-	<choices field="surah_number" placeholder="نام سوره">
+	<choices field="surah_number" placeholder="نام سوره" prefill="page">
 		{% for i in surahs %}
             <option value="{{ i.0 }}">{{ i.1 }}</option>
 		{% endfor %}
@@ -16,6 +16,6 @@
     {% endif %}
     <dualbuttons>
         <button style="secondary" action="@exit">خروج</button>
-        <button style="secondary" action="share:قرآن آنی عرفان http://kamane.cafebazaar.ir/?pn=erfan.inline.quran">به اشتراک گذاری</button>
+        <button style="secondary" action="share:قرآن آنی عرفان http://kamane.cafebazaar.ir/?pn=erfan.inline.quran">معرفی به دوستان</button>
     </dualbuttons>
 </page>
