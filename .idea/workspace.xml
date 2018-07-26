@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1184d09a-370f-428f-98df-084455daa555" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/erfan_quran/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/erfan_quran/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quran/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/quran/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/surah.xml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/surah.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="surah.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="surah.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/surah.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+            <state relative-caret-position="345">
+              <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -58,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/main.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -127,8 +124,8 @@
         <option value="$PROJECT_DIR$/templates/splash.xml" />
         <option value="$PROJECT_DIR$/erfan_quran/settings.py" />
         <option value="$PROJECT_DIR$/quran/utils.py" />
-        <option value="$PROJECT_DIR$/templates/surah.xml" />
         <option value="$PROJECT_DIR$/templates/main.xml" />
+        <option value="$PROJECT_DIR$/templates/surah.xml" />
       </list>
     </option>
   </component>
@@ -482,27 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/splash.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="92" selection-start-line="3" selection-start-column="92" selection-end-line="3" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/buy.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/surah.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/verse.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -514,6 +490,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="115" selection-start-line="18" selection-start-column="115" selection-end-line="18" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/buy.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/splash.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="92" selection-start-line="3" selection-start-column="92" selection-end-line="3" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/surah.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
         </state>
       </provider>
     </entry>
