@@ -1,0 +1,8 @@
+<splashPage action="1/" >
+    <theme background="#fffff0" text="#000d55" primary="#00550d"/>
+    <text style="centeredTitle"><h1>قرآن آنی عرفان</h1></text>
+    <image src="http://bayanbox.ir/view/7683820466901817106/app.inline.quran.png" width="50%"/>
+	<text style="centered">بدون نصب و دانلود برنامه، قرآن بخوانید و بشنوید.</text>
+    <divider style="empty"/>
+	<text style="centered"><font color="red">بدون خرید، حداکثر ترجمه‌ی ۱۰ آیه را می‌توانید مشاهده کنید.</font></text>
+</splashPage>

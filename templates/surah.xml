@@ -6,7 +6,12 @@
 	<text>انتخاب آیه:</text>
 	<choices field="verse_number" placeholder="شماره‌ی آیه">
 		{% for i in surah_verses_count_list %}
-            <option value="{{ i.0 }}">{{ i.1 }}</option>
+            {% if i.0 == 1 or i.0 == "1" %}
+                <option value="{{ i.0 }}" selected="true">{{ i.1 }}</option>
+            {% endif %}
+            {% if i.0 != 1 and i.0 != "1" %}
+                <option value="{{ i.0 }}">{{ i.1 }}</option>
+            {% endif %}
 		{% endfor %}
 	</choices>
     <text>انتخاب مترجم:</text>

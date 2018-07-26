@@ -5,8 +5,12 @@ import json
 
 
 @csrf_exempt
+def splash_view(request):
+    return render(request, "splash.xml")
+
+
+@csrf_exempt
 def main_view(request, purchased="", usage_count=1):
-    print("main")
     payload = json.loads(request.POST['payload'])
     if payload.get('state'):
         if payload['state'] != 'FAILED':
@@ -14,12 +18,11 @@ def main_view(request, purchased="", usage_count=1):
     print(purchased)
     surahs = get_surahs_list_with_index()
     return render(request, "main.xml", context={'surahs': surahs, 'purchased': purchased,
-                                                'usage_count': usage_count + 1})
+                                                'usage_count': usage_count})
 
 
 @csrf_exempt
 def surah_view(request, purchased="", usage_count=1):
-    print("surah")
     payload = json.loads(request.POST['payload'])
     if payload.get('purchases'):
         if len(payload['purchases']) > 0:
@@ -33,12 +36,11 @@ def surah_view(request, purchased="", usage_count=1):
                                                  'translators': translators_list, 'surah_number': surah_number,
                                                  'surah_verses_count_list': surah_verses_count_list,
                                                  'purchased': purchased,
-                                                 'usage_count': usage_count + 1})
+                                                 'usage_count': usage_count})
 
 
 @csrf_exempt
 def verse_view(request, surah_number, verse_number=-1, translator_id="", reader_id="", purchased="", usage_count=1):
-    print("verse")
     payload = json.loads(request.POST['payload'])
     if verse_number == -1:
         verse_number = payload.get('verse_number')
@@ -65,4 +67,4 @@ def verse_view(request, surah_number, verse_number=-1, translator_id="", reader_
 
 @csrf_exempt
 def buy_view(request, usage_count=1):
-    return render(request, "buy.xml", context={'usage_count': usage_count + 1})
+    return render(request, "buy.xml", context={'usage_count': usage_count})

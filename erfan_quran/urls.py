@@ -13,6 +13,6 @@ urlpatterns = [
     path('buy/<int:usage_count>/', buy_view),
     path('<str:purchased>/<int:usage_count>/', main_view),
     path('<int:usage_count>/', main_view),
-    path('', main_view),
+    path('', splash_view),
 ]
 
