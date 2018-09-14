@@ -11,7 +11,7 @@ def splash_view(request):
 
 @csrf_exempt
 def main_view(request, usage_count, purchased=""):
-    # disabling in-app purchases:
+    # disabling in-app purchase:
     usage_count = 1
 
     payload = json.loads(request.POST['payload'])
@@ -25,7 +25,7 @@ def main_view(request, usage_count, purchased=""):
 
 @csrf_exempt
 def surah_view(request, usage_count, purchased=""):
-    # disabling in-app purchases:
+    # disabling in-app purchase:
     usage_count = 1
 
     payload = json.loads(request.POST['payload'])
@@ -46,7 +46,7 @@ def surah_view(request, usage_count, purchased=""):
 
 @csrf_exempt
 def verse_view(request, usage_count, surah_number, verse_number=-1, translator_id="", reader_id="", purchased=""):
-    # disabling in-app purchases:
+    # disabling in-app purchase:
     usage_count = 1
 
     payload = json.loads(request.POST['payload'])
