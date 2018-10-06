@@ -1,7 +1,7 @@
 # Erfan Quran
 > An inline app for [Cafe Bazaar](http://cafebazaar.ir) market
 
-This is a Persian android app, which only can be runned by Cafe Bazaar market. There's no installation needed.
+This is a Persian android app, which only can be runned by Cafe Bazaar market. No installation is needed for users.
 
 It's implemented with Django framework.
 
