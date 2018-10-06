@@ -6,9 +6,9 @@ This is a Persian android app, which only can be runned by Cafe Bazaar market. T
 It's implemented with Django framework.
 
 ## Screenshots
-![app inline quran2](https://user-images.githubusercontent.com/7780269/46573690-c6638d80-c9a5-11e8-8f77-938989217150.jpg|width=200)
-![app inline quran1](https://user-images.githubusercontent.com/7780269/46573691-c95e7e00-c9a5-11e8-91af-6e802e396268.jpg|width=200)
-![app inline quran0](https://user-images.githubusercontent.com/7780269/46573694-ce233200-c9a5-11e8-9eb1-344a624be6a2.jpg|width=200)
+![app inline quran2](https://user-images.githubusercontent.com/7780269/46573690-c6638d80-c9a5-11e8-8f77-938989217150.jpg | width=200)
+![app inline quran1](https://user-images.githubusercontent.com/7780269/46573691-c95e7e00-c9a5-11e8-91af-6e802e396268.jpg | width=200)
+![app inline quran0](https://user-images.githubusercontent.com/7780269/46573694-ce233200-c9a5-11e8-9eb1-344a624be6a2.jpg | width=200)
 
 ## Usage
 ```
